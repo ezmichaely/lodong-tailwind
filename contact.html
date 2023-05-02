@@ -111,29 +111,48 @@
         </div>
       </section>
 
+      <!-- form -->
       <section class="w-full flex justify-center items-center mt-[140px] pl-[250px]">
         <div class="flex justify-center items-center flex-row">
           <input type="text" class="text-center rounded-[20px] h-[60px] w-[306px] border-[#2B2A2A] bg-transparent text-[18px] focus:border-[#2B2A2A] focus:ring-0" placeholder="이름 (소속) 입력하기">
+
           <input type="text" class="ml-[10px] text-center rounded-[20px] h-[60px] w-[306px] border-[#2B2A2A] bg-transparent text-[18px] focus:border-[#2B2A2A] focus:ring-0" placeholder="연락처 입력하기">
-          <input type="checkbox" class="ml-[30px] mr-[20px] text-center rounded-[10px] w-[27px] h-[27px] border-[0] bg-[#2B2A2A] bg-opacity-20 text-[18px] focus:border-[0]  focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-[0]" placeholder="연락처 입력하기">
+
+          <input type="checkbox" class="ml-[30px] mr-[20px] text-center rounded-[10px] w-[27px] h-[27px] border-[0] bg-[#2B2A2A] bg-opacity-20 text-[18px] focus:border-[0]  focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-[0] appearance-none checked:bg-[#2B2A2A] checked:bg-opacity-20" placeholder="연락처 입력하기">
+
           <p class="text-[18px] text-[#2B2A2A] font-semibold">개인정보 수집 및 이용에 동의합니다.</p>
+
           <button id="contactSubmit" class="ml-[80px] h-[60px] w-[180px] rounded-[20px] text-[18px] text-center text-white bg-[#2B2A2A]">상담 예약</button>
         </div>
       </section>
     </main>
 
     
+    <!-- modal -->
+    <div id="modal" class="hidden absolute top-0 left-0 bg-white bg-opacity-50 h-full w-full flex justify-center items-center z-[100]">
+        <div class="relative bg-[#2B2A2A] h-[106px] w-[786px] text-center text-[23px] text-white flex justify-center items-center rounded-[20px] shadow">
+          <i class="fa-sharp fa-solid fa-circle-check"></i>
+          <span class="tracking-tighter ml-[20px]">접수 완료 !  담당자가 24 시간 내에 신속하게 연락 드리겠습니다  ^_^</span>
 
-    <footer class="w-full bg-white h-[210px] flex justify-start items-center flex-row px-[90px] border ">
+          <div id="modalClose" class="absolute cursor-pointer h-10 w-10 -right-3 -top-3 bg-[#FA2B2B] rounded-[20px]">
+            <div class="h-10 w-10 flex justify-center items-center">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <footer class="w-full bg-white h-[210px] flex justify-between items-center flex-row px-[90px]">
       <!-- left -->
-      <div class="flex justify-start items-center flex-row mr-[450px]">
+      <div class="flex justify-start items-center flex-row ">
         <!-- logo -->
         <a href="./index.html" class="h-[76px] mr-[100px]">
           <img src="./assets/img/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
         </a>
 
         <!-- details -->
-        <div class="text-left leading-[32px] tracking-tighter text-[18px]">
+        <div class="grow text-left leading-[32px] tracking-tighter text-[18px]">
           <!-- name -->
           <p class="">
             <span class="whitespace-nowrap">
@@ -148,26 +167,26 @@
 
             <span class="whitespace-nowrap">
               <span class="font-bold">사업자등록번호 : </span>
-              <span class="">000-00-00000</span>
+              <span class="">511-53-00073</span>
             </span>
           </p>
 
           <!-- address -->
-          <p class="">
+          <p class="whitespace-nowrap">
             <span class="font-bold whitespace-nowrap">사업장 소재지 :</span>
-            <span class="">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
+            <span class="whitespace-nowrap">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
           </p>
 
           <!-- contacts -->
           <p class="">
             <span class="whitespace-nowrap">
               <span class="font-bold">TEL : </span>
-              <span class="whitespace-nowrap">010-6575-1161</span>
+              <span class="whitespace-nowrap">010-6575-1161 / 031-444-1161</span>
             </span>
 
             <span class="mx-[40px] whitespace-nowrap">
               <span class="font-bold">FAX : </span>
-              <span class="whitespace-nowrap">031-0000-0000</span>
+              <span class="whitespace-nowrap">031-460-8553</span>
             </span>
 
             <span class="whitespace-nowrap">
@@ -180,7 +199,7 @@
       </div>
 
       <!-- right/socials -->
-      <div class="flex justify-start items-start flex-col gap-[30px]">
+      <div class="flex justify-start items-start flex-col gap-[30px] ">
         <div class="flex justify-start items-center flex-row gap-[30px]">
           <a href="#" class="h-[50px]">
             <img src="./assets/img/icon/facebook.png" alt="facebook" class="h-[50px]">
@@ -203,20 +222,6 @@
       </div>
     </footer>
 
-
-    <!-- modal -->
-    <div id="modal" class="hidden absolute top-0 left-0 bg-white bg-opacity-50 h-full w-full flex justify-center items-center z-[100]">
-        <div class="relative bg-[#2B2A2A] h-[106px] w-[786px] text-center text-[23px] text-white flex justify-center items-center rounded-[20px] shadow">
-          <i class="fa-sharp fa-solid fa-circle-check"></i>
-          <span class="tracking-tighter ml-[20px]">접수 완료 !  담당자가 24 시간 내에 신속하게 연락 드리겠습니다  ^_^</span>
-
-          <div id="modalClose" class="absolute cursor-pointer h-10 w-10 -right-3 -top-3 bg-[#FA2B2B] rounded-[20px]">
-            <div class="h-10 w-10 flex justify-center items-center">
-              <i class="fa-solid fa-xmark"></i>
-            </div>
-          </div>
-        </div>
-    </div>
   </div>
 
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
